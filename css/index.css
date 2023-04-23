@@ -1,3 +1,43 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.main-heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.sml-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.xtra-sml-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-data-text {
+  font-size: 5.6rem;
+  line-height: 48px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+.main-data-sub-text {
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.secondary-data-text {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.main-colour {
+  color: red;
+}
+
 *,
 *::after,
 *::before {
@@ -5,4 +45,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
