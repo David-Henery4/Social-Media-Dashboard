@@ -1,3 +1,32 @@
-.main-colour{
-  color: red;
+
+// Light colours
+.lightMode{
+  --backgroundColour: #ffffff;
+  --mainText: #1D1F29;
+  --secondaryText: #63687D;
+  --toggleTrack: #AEB3CB;
+  --toggleBall: #F1F3FA;
+  --backgroundSvg: #F7F9FF;
+  --cardHover: #E1E4F0;
+  --cardBackground: #F1F3FA;
 }
+
+// dark colours
+.darkMode{
+  --backgroundColour: #1D1F29;
+  --mainText: #ffffff;
+  --secondaryText: #8C98C6;
+  --toggleTrack: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+  --toggleBall: #252B42;
+  --backgroundSvg: #20222F;
+  --cardHover: #333A55;
+  --cardBackground: #252B42;
+}
+
+// overall colours
+$facebookBlue: #178FF5;
+$twitterBlue: #1DA1F2;
+$instagramColour: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+$postiveGreen: #1EB589;
+$negativeRed: #DC414C;
+$youtubeRed: #C4032B;

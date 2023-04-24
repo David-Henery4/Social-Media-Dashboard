@@ -1,1 +1,1 @@
-
+document.documentElement.className = "lightMode"
