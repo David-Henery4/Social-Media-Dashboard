@@ -1,0 +1,25 @@
+.navbar{
+  width: 100%;
+  text-align:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__left{
+    display: grid;
+    gap: .4rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid var(--lineColour);
+    h1{
+      color: var(--mainText);
+    }
+    p{
+      color: var(--secondaryText);
+    }
+  }
+  &__right{
+    padding: 1.6rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

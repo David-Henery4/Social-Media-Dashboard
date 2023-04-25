@@ -1,5 +1,15 @@
+@import "./variables/variables";
 @import "./typography/font";
 @import "./typography/headings";
-@import "./variables/variables";
+//
+@import "./layouts/wrapper";
+@import "./layouts/mainCards";
+@import "./layouts/statsCards";
+@import "./components/navbar";
+@import "./components/toggle";
+@import "./components/mainStats";
+@import "./components/overviewCard";
+@import "./components/secondaryStats";
+@import "./components/todayCard";
 @import "./base/base";
 
