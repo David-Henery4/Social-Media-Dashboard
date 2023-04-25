@@ -1,0 +1,14 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab {
+    // 710px
+    @media (min-width: 44.37em) {
+      @content;
+    }
+  }
+  @if $breakpoint == smDesk {
+    // 920px
+    @media (min-width: 57.5em) {
+      @content;
+    }
+  }
+}

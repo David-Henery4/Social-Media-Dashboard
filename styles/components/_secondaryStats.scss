@@ -1,7 +1,11 @@
-.secondary-stats{
+.secondary-stats {
   padding: 22px 0;
   //
-  &__title{
+  @include respond(smDesk) {
+    padding: 15px 0;
+    border: none;
+  }
+  &__title {
     color: var(--secondaryText);
     margin-bottom: 2.4rem;
   }

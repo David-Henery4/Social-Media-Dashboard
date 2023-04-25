@@ -1,4 +1,7 @@
-.main-stats{
+.main-stats {
   padding: 24px 0;
   width: 100%;
+  @include respond(smDesk) {
+    padding: 31.5px 0;
+  }
 }

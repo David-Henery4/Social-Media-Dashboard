@@ -4,6 +4,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include respond (smDesk){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 31.5px;
+  }
   &__left{
     display: grid;
     gap: .4rem;
@@ -15,11 +21,19 @@
     p{
       color: var(--secondaryText);
     }
+    @include respond (smDesk){
+      padding: 0;
+      border: none;
+    }
   }
   &__right{
     padding: 1.6rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond (smDesk){
+      padding: 0;
+      gap: 13px;
+    }
   }
 }

@@ -2,6 +2,9 @@
   font-size: 2.4rem; // mob
   // font-size: 2.8rem; // desk
   font-weight: bold;
+  @include respond (tab){
+    font-size: 2.8rem;
+  }
 }
 .secondary-heading{
   font-size: 2.4rem;
