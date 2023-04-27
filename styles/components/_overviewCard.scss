@@ -1,4 +1,6 @@
 .overview-card{
+  position: relative;
+  overflow: hidden;
   padding: 32px 0;
   width: 100%;
   display: flex;
@@ -8,6 +10,17 @@
   gap: 28px;
   border-radius: 5px;
   background-color: var(--cardBackground);
+  &:hover{
+    background-color: var(--cardHover);
+    cursor: pointer;
+  }
+  &-border{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   &__top{
     display: flex;
     align-items: center;
@@ -27,6 +40,7 @@
     }
     p{
       color: var(--secondaryText);
+      text-transform: uppercase;
     }
   }
   &__bottom{
@@ -34,8 +48,20 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
-    p{
-      color: $postiveGreen;
-    }
   }
+}
+
+
+
+.facebook-color{
+  background:  $facebookBlue;
+}
+.twitter-color{
+  background:  $twitterBlue;
+}
+.youtube-color{
+  background:  $youtubeRed;
+}
+.instagram-color{
+  background:  $instagramColour;
 }

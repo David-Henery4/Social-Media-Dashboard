@@ -2,8 +2,12 @@
   position: relative;
   width: 4.8rem;
   height: 2.4rem;
-  background-color: var(--toggleTrack);
+  background: var(--toggleTrack);
   border-radius: 12px;
+  &:hover{
+    cursor: pointer;
+    background: $toggleHover;
+  }
   &__ball {
     width: 1.8rem;
     height: 1.8rem;
@@ -13,8 +17,10 @@
     top: 50%;
     right: 3px;
     transform: translate(0 , -50%);
-    transition: all 2s;
-    // FOR SWITCH ANIMATION
-    // transform: translate(calc(-100% - 7px) , -50%);
+    transition: all .5s;
   }
+}
+
+.toggle-active{
+  transform: translate(calc(-100% - 5px) , -50%);
 }

@@ -1,3 +1,10 @@
 body{
   font-family: 'Inter', sans-serif;
 }
+
+.positive-text{
+  color: $postiveGreen;
+}
+.negative-text{
+  color: $negativeRed;
+}

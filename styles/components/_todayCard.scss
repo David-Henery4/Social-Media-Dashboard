@@ -6,6 +6,10 @@
   padding: 2.8rem 2.4rem;
   background-color: var(--cardBackground);
   border-radius: 5px;
+  &:hover{
+    background-color: var(--cardHover);
+    cursor: pointer;
+  }
   &__left{
     height: 100%;
     display: flex;
@@ -32,8 +36,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    p{
-      color: $postiveGreen;
-    }
   }
 }
