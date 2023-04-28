@@ -1,4 +1,4 @@
-import View from "./View.js";
+import View from "./AView.js";
 import { downIcon, upIcon } from "../../assets";
 
 class MainDataView extends View {
@@ -15,7 +15,7 @@ class MainDataView extends View {
     return this._data
       .map((stats) => {
         let value = false;
-        stats?.changeDiff < 0 ? value = true : value = false
+        stats?.changeDiff < 0 ? (value = true) : (value = false);
         return `<div class="overview-card">
         <div class="overview-card-border ${stats?.colorBorder}"></div>
           <div class="overview-card__top">

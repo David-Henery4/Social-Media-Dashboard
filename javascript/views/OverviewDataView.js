@@ -1,4 +1,4 @@
-import View from "./View.js";
+import View from "./AView.js";
 
 import { downIcon, upIcon } from "../../assets";
 
@@ -6,10 +6,10 @@ class OverviewDataView extends View {
   _parentElement = document.querySelector(".stats-cards-container");
   //
   _handleNegativePercentageFormat(percent) {
-    return `${Math.abs(percent)}%`
+    return `${Math.abs(percent)}%`;
   }
   _handlePositivePercentageFormat(percent) {
-    return `${percent}%`
+    return `${percent}%`;
   }
   //
   _generateMarkup() {
