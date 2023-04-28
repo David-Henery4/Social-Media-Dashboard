@@ -1,4 +1,5 @@
 import View from "./View.js";
+
 import { downIcon, upIcon } from "../../assets";
 
 class OverviewDataView extends View {
