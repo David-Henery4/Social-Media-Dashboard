@@ -1,43 +1,59 @@
-document.documentElement.className = "lightMode";
+// document.documentElement.className = "lightMode";
 
 const htmlDoc = document.documentElement;
 const toggleBtn = document.getElementById("toggle-switch");
 const toggleBall = document.getElementById("toggle-ball");
+
 // CHECKS PREFERENCE
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-
+// HANDLES THEME CHANGE ON CLICK
 toggleBtn.addEventListener("click", () => {
   let theme;
   toggleBall.classList.toggle("toggle-active");
-  document.documentElement.classList.toggle("darkMode");
-  document.documentElement.classList.toggle("lightMode");
-  if (htmlDoc.classList.contains("lightMode")) console.log("light mode")
-  if (htmlDoc.classList.contains("darkMode")) console.log("dark mode")
-  // let theme = "lightTheme"
-  // if (isDarkMode){
-  //   theme = "darkTheme"
-  // }
+  htmlDoc.classList.toggle("darkMode");
+  htmlDoc.classList.toggle("lightMode");
+  if (htmlDoc.classList.contains("lightMode")) {
+    console.log("light mode");
+    theme = "lightMode";
+    localStorage.setItem("theme", theme);
+  }
+  if (htmlDoc.classList.contains("darkMode")) {
+    console.log("dark mode");
+    theme = "darkMode";
+    localStorage.setItem("theme", theme);
+  }
 });
 
-
-
+// HANLDES THEME CHANGE BASED ON USERS OS PREFERENCE
 const handleThemeChange = (isDarkMode) => {
   if (isDarkMode) {
-    document.documentElement.classList.add("darkMode")
-    document.documentElement.classList.remove("lightMode");
+    htmlDoc.classList.add("darkMode");
+    htmlDoc.classList.remove("lightMode");
     toggleBall.classList.add("toggle-active");
   }
   if (!isDarkMode) {
-    document.documentElement.classList.add("lightMode");
-    document.documentElement.classList.remove("darkMode")
+    htmlDoc.classList.add("lightMode");
+    htmlDoc.classList.remove("darkMode");
     toggleBall.classList.remove("toggle-active");
   }
 };
 
-// HANLDE THE CHANGE BASED ON INITAL PREFERENCE
-handleThemeChange(useDark.matches)
+// CHECK IF IN LOCAL STORAGE OR
+// SET BY PREFERENCE ON INITAL LOAD
+const checkIfThemeStored = () => {
+  htmlDoc.className = "lightMode";
+  if (localStorage.getItem("theme")) {
+    const theme = localStorage.getItem("theme");
+    htmlDoc.className = theme
+  }
+  if (!localStorage.getItem("theme")) {
+    // HANLDE THE CHANGE BASED ON INITAL PREFERENCE
+    handleThemeChange(useDark.matches);
+  }
+};
+
+checkIfThemeStored()
 
 // LISTENS FOR CHANGES TO THE USERS PREFERENCE SETTINGS
-useDark.addEventListener("change", (e) => handleThemeChange(e.matches))
-
+useDark.addEventListener("change", (e) => handleThemeChange(e.matches));
