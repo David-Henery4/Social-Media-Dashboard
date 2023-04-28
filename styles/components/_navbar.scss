@@ -31,6 +31,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--toggleLabel);
+    &:hover{
+      color: var(--toggleLabelHover);
+    }
     @include respond (smDesk){
       padding: 0;
       gap: 13px;

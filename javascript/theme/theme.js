@@ -1,5 +1,4 @@
 // document.documentElement.className = "lightMode";
-
 const htmlDoc = document.documentElement;
 const toggleBtn = document.getElementById("toggle-switch");
 const toggleBall = document.getElementById("toggle-ball");
@@ -14,12 +13,10 @@ toggleBtn.addEventListener("click", () => {
   htmlDoc.classList.toggle("darkMode");
   htmlDoc.classList.toggle("lightMode");
   if (htmlDoc.classList.contains("lightMode")) {
-    console.log("light mode");
     theme = "lightMode";
     localStorage.setItem("theme", theme);
   }
   if (htmlDoc.classList.contains("darkMode")) {
-    console.log("dark mode");
     theme = "darkMode";
     localStorage.setItem("theme", theme);
   }

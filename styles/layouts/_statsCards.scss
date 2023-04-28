@@ -1,5 +1,9 @@
 .stats-cards-container{
   display: grid;
-  gap: 1.6rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  @include respond (lrgDesk) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.4rem 3rem;
+  }
 }
