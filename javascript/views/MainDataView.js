@@ -1,4 +1,4 @@
-import View from "../views/View";
+import View from "./View.js";
 import { downIcon, upIcon } from "../../assets";
 
 class MainDataView extends View {
