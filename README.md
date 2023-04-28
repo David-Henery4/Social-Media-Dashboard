@@ -34,11 +34,9 @@ Users are able to:
 
 ### Links
 
-<br>
-<p style="font-size:12px;">Links to be added</p>
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Fontend-mentor](https://github.com/David-Henery4/Social-Media-Dashboard)
+- Live Site URL: [Socials Board](https://socials-board.netlify.app)
 
 ## My process
 
